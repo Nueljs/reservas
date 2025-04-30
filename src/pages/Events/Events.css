@@ -1,0 +1,150 @@
+/* === IMPORTACIÓN DE FUENTES === */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+
+/* === VARIABLES GLOBALES === */
+:root {
+  --bs-purple: #4d194d;
+  --bs-purple-dark: #6f42c1;
+  --bs-purple-light: #b44cb4;
+  --bs-purple-extra-light: #f5a6f5;
+}
+
+/* === ESTILOS GENERALES === */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* === COLORES PERSONALIZADOS === */
+.c-e-custom-bg-primary {
+  background-color: var(--bs-purple);
+}
+.c-e-custom-text-primary {
+  color: var(--bs-purple);
+}
+.c-e-custom-bs-dark {
+  background-color: var(--bs-purple-light);
+}
+.c-e-custom-bs-info {
+  background-color: var(--bs-purple-extra-light);
+}
+
+/* === FILTROS === */
+.c-e-container-filters {
+  flex-wrap: wrap;
+}
+
+.c-e-form-filters {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.c-e-location,
+.c-e-style,
+.c-e-btn {
+  background-color: var(--bs-purple);
+  color: white;
+  border-radius: 12px;
+  border: none;
+  padding: 12px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.c-e-btn-aceptar-filtros {
+  background-color: var(--bs-purple-dark);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.c-e-filter-date,
+.c-e-price-container {
+  position: relative;
+}
+
+.c-e-input-date,
+.c-e-range-price {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* === TARJETAS DE EVENTOS === */
+.c-e-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.c-e-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.c-e-img-catalog {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.c-e-card-body {
+  padding: 1.25rem;
+}
+
+.c-e-card-body h6 {
+  color: var(--bs-purple);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.c-e-card-body p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.c-e-btn-card {
+  background-color: var(--bs-purple);
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.c-e-btn-card:hover {
+  background-color: #B44CB4;
+  transform: scale(1.02);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .c-e-form-filters {
+    justify-content: center;
+  }
+
+  .c-e-btn-aceptar-filtros {
+    order: 1;
+  }
+
+  .c-e-img-catalog {
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .c-e-card-body {
+    padding: 0.75rem;
+  }
+
+  .c-e-btn-card {
+    padding: 0.5rem;
+  }
+}

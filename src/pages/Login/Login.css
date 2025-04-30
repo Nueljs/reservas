@@ -1,60 +1,66 @@
-/* Cargar la fuente Montserrat desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+/* === FUENTE === */
 .font-family_login {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/*Container del login*/
+/* === CONTENEDOR PRINCIPAL === */
 .border-custom_login {
-    border: 1px solid #4D194D;
-    max-width: 900px;
+  border: 1px solid #4D194D;
+  max-width: 900px;
 }
 
-/*Tamaño de letra del login*/
-.font-size_login{
-    font-size: 12px;
+/* === TAMAÑO DE FUENTE === */
+.font-size_login {
+  font-size: 12px;
 }
 
-/*Botón inicio de sesión*/
+/* === PLACEHOLDERS === */
+form input::placeholder {
+  font-size: 10px;
+}
+
+/* === BOTÓN === */
 .button_login.btn {
-    font-size: 12px;
-    background-color: #4D194D;
-    border: 2px solid #4D194D;
-    color: #ffffff;
+  font-size: 12px;
+  background-color: #4D194D;
+  border: 2px solid #4D194D;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 .button_login.btn:hover {
-    background-color: #B44CB4;
-    border: 2px solid #B44CB4;
-    color: #ffffff;
+  background-color: #B44CB4;
+  border-color: #B44CB4;
 }
 
-/*Botón olvidé contraseña*/
-.forgot-password{
-    font-size: 12px;
-    color:#4D194D;
-    text-decoration: none;
-}
-
-.forgot-password:hover{
-    font-size: 12px;
-    color:#B44CB4;
-    text-decoration: none;
-}
-
-/*Botón que lleva a registrarse*/
+/* === ENLACE "SIGN UP" === */
 .register-link {
-    color:#4D194D;
-    text-decoration: none;
+  color: #4D194D;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .register-link:hover {
-    color:#B44CB4;
-    text-decoration: none;
+  color: #B44CB4;
 }
 
+/* === ENLACE "FORGOT PASSWORD" === */
+.forgot-password {
+  font-size: 12px;
+  color: #4D194D;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
+.forgot-password:hover {
+  color: #B44CB4;
+}
 
-
-
+/* === IMAGEN === */
+.img_login {
+  object-fit: cover;
+  height: 100%;
+}

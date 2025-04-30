@@ -1,7 +1,9 @@
 import React from 'react'
 import "./Footer.css"
+import { useNavigate } from 'react-router-dom'
 
 export const Footer = () => {
+  const nav = useNavigate()
   return (
     <footer className="container-fluid p-5">
     <div className="d-flex flex-column align-items-center">
@@ -9,9 +11,9 @@ export const Footer = () => {
         {/* Menú de navegación */}
         <nav className="col-12 col-md-6 mt-3">
           <ul className="list-unstyled">
-            <li><a href="home.php" className="nav-footer">Home</a></li>
-            <li><a href="catalog-events.html" className="nav-footer">Events</a></li>
-            <li><a href="about-us.html" className="nav-footer">About us</a></li>
+            <li><a onClick={()=>{nav('/')}} className="nav-footer">Home</a></li>
+            <li><a onClick={()=>{nav('/events')}} className="nav-footer">Events</a></li>
+            <li><a onClick={()=>{nav('/aboutus')}} className="nav-footer">About us</a></li>
           </ul>
         </nav>
 
