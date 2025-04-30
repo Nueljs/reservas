@@ -1,8 +1,10 @@
 import React from "react";
 import "./Events.css";
 import fotoEvento from "../../assets/img/eventPhoto.png";
+import { useNavigate } from "react-router-dom";
 
 export const Events = () => {
+  const nav = useNavigate()
   return (
     <main className="min-vh-100">
       {/* Filtros */}
@@ -92,7 +94,7 @@ export const Events = () => {
                   <p className="text-muted mb-1">2023-10-15</p>
                   <p className="text-muted mb-2">City - Style</p>
                   <button className="c-e-btn-card btn btn-primary w-100 custom py-2">
-                    <a href="#" className="text-white text-decoration-none">
+                    <a onClick={()=>{nav('/eventpage')}} className="text-white text-decoration-none">
                       Book Now
                     </a>
                   </button>

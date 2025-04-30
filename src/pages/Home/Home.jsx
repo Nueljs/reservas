@@ -47,6 +47,7 @@ function HomePage() {
               src={fotoEvento}
               alt="Random 1"
               style={{ aspectRatio: "1/1", objectFit: "cover" }}
+              onClick={()=>{nav('/eventpage')}}
             />
           </div>
 
@@ -57,6 +58,7 @@ function HomePage() {
               src={fotoEvento}
               alt="Random 2"
               style={{ aspectRatio: "1/1", objectFit: "cover" }}
+              onClick={()=>{nav('/eventpage')}}
             />
           </div>
 
@@ -67,6 +69,7 @@ function HomePage() {
               src={fotoEvento}
               alt="Random 3"
               style={{ aspectRatio: "1/1", objectFit: "cover" }}
+              onClick={()=>{nav('/eventpage')}}
             />
           </div>
 
@@ -88,6 +91,7 @@ function HomePage() {
               src={fotoEvento}
               alt="Random 5"
               style={{ aspectRatio: "1/1", objectFit: "cover" }}
+              onClick={()=>{nav('/eventpage')}}
             />
           </div>
 

@@ -1,15 +1,19 @@
-import { useNavigate } from 'react-router-dom';
-import fotoLogin from '../../assets/img/Foto_Login.png';
-import { useEffect, useState } from 'react';
-import './Login.css'; // Asegúrate de importar el CSS
+import { useNavigate } from "react-router-dom";
+import fotoLogin from "../../assets/img/Foto_Login.png";
+import { useEffect, useState } from "react";
+import "./Login.css"; // Asegúrate de importar el CSS
 
 export const Login = () => {
   const nav = useNavigate();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  useEffect(() => { console.log(email); }, [email]);
-  useEffect(() => { console.log(password); }, [password]);
+  useEffect(() => {
+    console.log(email);
+  }, [email]);
+  useEffect(() => {
+    console.log(password);
+  }, [password]);
 
   return (
     <main className="d-flex align-items-center justify-content-center font-family_login min-vh-100">
@@ -22,9 +26,13 @@ export const Login = () => {
               <form className="font-size_login">
                 {/* Email */}
                 <div className="mb-3">
-                  <label htmlFor="email" className="form-label">Email</label>
+                  <label htmlFor="email" className="form-label">
+                    Email
+                  </label>
                   <div className="input-group">
-                    <span className="input-group-text"><i className="fa-solid fa-envelope"></i></span>
+                    <span className="input-group-text">
+                      <i className="fa-solid fa-envelope"></i>
+                    </span>
                     <input
                       type="email"
                       className="form-control"
@@ -40,9 +48,13 @@ export const Login = () => {
 
                 {/* Password */}
                 <div className="mb-3">
-                  <label htmlFor="password" className="form-label">Password</label>
+                  <label htmlFor="password" className="form-label">
+                    Password
+                  </label>
                   <div className="input-group">
-                    <span className="input-group-text"><i className="fa-solid fa-lock"></i></span>
+                    <span className="input-group-text">
+                      <i className="fa-solid fa-lock"></i>
+                    </span>
                     <input
                       type="password"
                       className="form-control"
@@ -58,7 +70,11 @@ export const Login = () => {
 
                 {/* Checkbox */}
                 <div className="form-check mb-3">
-                  <input className="form-check-input" type="checkbox" id="rememberMe" />
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    id="rememberMe"
+                  />
                   <label className="form-check-label" htmlFor="rememberMe">
                     Remember Me
                   </label>
@@ -72,16 +88,18 @@ export const Login = () => {
 
               {/* Enlace "Forgot Password" */}
               <div className="text-center mt-3">
-                <a href="#" className="forgot-password">Forgot password?</a>
+                <a href="#" className="forgot-password">
+                  Forgot password?
+                </a>
               </div>
 
               {/* Enlace para Registrarse */}
               <div className="text-center mt-3">
                 <p className="font-size_login mb-0">
-                  ¿New in <strong>Random Events?</strong>{' '}
+                  ¿New in <strong>Random Events?</strong>{" "}
                   <span
                     className="register-link"
-                    onClick={() => nav('/register')}
+                    onClick={() => nav("/register")}
                     role="button"
                     tabIndex={0}
                   >
