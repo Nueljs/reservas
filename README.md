@@ -1,12 +1,31 @@
-# React + Vite
+# 🗓 Reservas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Repositorio:** [Nueljs/reservas](https://github.com/Nueljs/reservas)  
+**Tecnologías utilizadas:** React, Bootstrap, Vite
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📝 Descripción
 
-## Expanding the ESLint configuration
+**Reservas** es una aplicación web diseñada para gestionar reservas de manera eficiente. Utiliza **React** para la construcción de la interfaz de usuario y **Bootstrap** para los estilos, ofreciendo una experiencia de usuario moderna y responsiva.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Estructura del proyecto
+
+El repositorio contiene:
+
+- **`src/`**: Código fuente de la aplicación.  
+- **`index.html`**: Archivo HTML principal.  
+- **`package.json`**: Dependencias y scripts del proyecto.  
+- **`vite.config.js`**: Configuración de Vite.  
+- **`README.md`**: Documentación del proyecto.  
+
+---
+
+## 🚀 Cómo utilizarlo
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/Nueljs/reservas.git
